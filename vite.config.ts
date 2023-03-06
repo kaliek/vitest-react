@@ -12,7 +12,7 @@ export default defineConfig({
     coverage: {
       provider: 'c8',
       reporter: ['text', 'json', 'html'],
-      exclude: ['html/**', "**/*.config.*", "**/*.d.ts"],
+      exclude: ['html/**', "**/*.config.*", "**/*.d.ts", "**/*.test.{ts,tsx}"],
       all: true
     },
     reporters: ['default', 'html']
